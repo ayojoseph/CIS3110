@@ -51,7 +51,7 @@ void Enqueue (Item X, Queue *L) {
 #ifdef DEBUG
 	int oldSize=Size(L);
 	if(Full(L)) {
-		printf("Violated precondition for Enqueue!\n");
+		printf("Violated precondition for Enqueue! (Full)\n");
 		exit(EXIT_FAILURE);
 	}
 #endif
